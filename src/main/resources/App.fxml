@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+  <tabs>
+    <Tab text="MySQL SERVER">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="370.0" prefWidth="600.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="370.0" prefWidth="152.0">
+                           <children>
+                              <Button fx:id="VisualizarMy" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onVisualizarMyAction" text="Visualizar Tablas">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="InsertarMy" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onInsertarMyAction" text="Insertar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="EliminarMy" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onEliminarMyAction" text="Eliminar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="ModificarMy" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onModificarMyAction" text="Modificar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <ComboBox fx:id="ProcedimientosMyCombo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText=" Procedimientos Almacenados">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <ProgressBar fx:id="ProgressMy" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets left="5.0" right="5.0" top="25.0" />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <TextArea fx:id="TextAreaMy" prefHeight="370.0" prefWidth="447.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="SQL SERVER">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="370.0" prefWidth="600.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="370.0" prefWidth="152.0">
+                           <children>
+                              <Button fx:id="VisualizarSQL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onVisualizarSQLAction" text="Visualizar Tablas">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="InsertarSQL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onInsertarSQLAction" text="Insertar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="EliminarSQL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onEliminarSQLAction" text="Eliminar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="ModificarSQL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onModificarSQLAction" text="Modificar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <ComboBox fx:id="ProcedimientosSQLCombo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText=" Procedimientos Almacenados">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <ProgressBar fx:id="ProgressSQL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets left="5.0" right="5.0" top="25.0" />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <TextArea fx:id="TextAreaSQL" prefHeight="370.0" prefWidth="447.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="ACCESS">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="370.0" prefWidth="600.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="370.0" prefWidth="152.0">
+                           <children>
+                              <Button fx:id="VisualizarAccess" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onVisualizarAccessAction" text="Visualizar Tablas">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="InsertarAccess" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onInsertarAccessAction" text="Insertar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="EliminarAccess" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onEliminarAccess" text="Eliminar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="ModificarAccess" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onModificarAccess" text="Modificar Registro">
+                                 <VBox.margin>
+                                    <Insets bottom="70.0" left="5.0" right="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <ProgressBar fx:id="ProgressAccess" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" progress="0.0">
+                                 <VBox.margin>
+                                    <Insets left="5.0" right="5.0" top="28.0" />
+                                 </VBox.margin>
+                              </ProgressBar>
+                           </children>
+                        </VBox>
+                        <TextArea fx:id="TextAreaAccess" prefHeight="370.0" prefWidth="447.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextArea>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
