@@ -16,7 +16,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 
-public class InsertarController implements Initializable{
+public class InsertarSQLController implements Initializable{
 	@FXML
     private VBox view;
 	@FXML
@@ -52,7 +52,7 @@ public class InsertarController implements Initializable{
     	codUniversidad = CodUniCombo.getValue();
     	precio = Integer.parseInt(CantidadText.getText());
     	comedor = ComedorCheck.isSelected();
-    	MySQLConnection.Insertar(nomResidencia, codUniversidad, precio, comedor);
+    	SQLConnection.Insertar(nomResidencia, codUniversidad, precio, comedor);
     }
 	
    
@@ -60,10 +60,10 @@ public class InsertarController implements Initializable{
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		RellenarComboMySQL();
+		RellenarComboSQL();
 		
 	}
-	public InsertarController() throws IOException {
+	public InsertarSQLController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/Insertar.fxml"));
 		loader.setController(this);
 		loader.load();
@@ -73,16 +73,18 @@ public class InsertarController implements Initializable{
 		return view;
 	}
 	
-	public  void RellenarComboMySQL() {
-		try {
-			
-			ObservableList<String> data = FXCollections.observableArrayList();
-			for (int i = 0; i < MySQLConnection.Combo().size(); i++) {
-				data.add(MySQLConnection.Combo().get(i));
-			}
-			CodUniCombo.setItems(data);
-			}catch(Exception e) {
+	//METODOS SQL
+		public void RellenarComboSQL() {
+			try {
+
+				ObservableList<String> data = FXCollections.observableArrayList();
+				for (int i = 0; i < SQLConnection.Combo().size(); i++) {
+					data.add(MySQLConnection.Combo().get(i));
+				}
+
+				CodUniCombo.setItems(data);
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
-	}
+		}
 }

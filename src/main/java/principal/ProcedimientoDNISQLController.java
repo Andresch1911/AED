@@ -20,7 +20,7 @@ import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.scene.layout.HBox;
 
-public class ProcedimientoDNIController implements Initializable{
+public class ProcedimientoDNISQLController implements Initializable{
 	@FXML
 	private HBox view;
 	@FXML
@@ -61,7 +61,7 @@ public class ProcedimientoDNIController implements Initializable{
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		ListProperty<Estancias> estancias = new SimpleListProperty<>(FXCollections.observableArrayList());
-		
+		try {
 		table.itemsProperty().bind(estancias);
 		dniProperty().bindBidirectional(dniEntrada.textProperty());
 		dniProperty().addListener((o, ov, nv) ->{
@@ -72,13 +72,16 @@ public class ProcedimientoDNIController implements Initializable{
 				FechaIniColumn.setCellValueFactory(v -> v.getValue().fechaInProperty());
 				FechaFinColumn.setCellValueFactory(v -> v.getValue().fechaFinProperty());
 				PrecioColumn.setCellValueFactory(v -> v.getValue().precioProperty());
-				estancias.addAll(MySQLConnection.ProcedimientAlmacenado1(dniEntrada.getText()));
+				estancias.addAll(SQLConnection.ProcedimientAlmacenado1(dniEntrada.getText()));
 				
 		});
+		}catch(Exception e) {
+			
+		}
 		
 	}
 	//GETS SETS ETC
-	public ProcedimientoDNIController() throws IOException {
+	public ProcedimientoDNISQLController() throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/ProcedimientoDNI.fxml"));
 		loader.setController(this);
 		loader.load();

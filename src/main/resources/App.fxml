@@ -6,12 +6,13 @@
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<TabPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+<TabPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <tabs>
     <Tab text="MySQL SERVER">
       <content>
@@ -53,11 +54,15 @@
                               </ProgressBar>
                            </children>
                         </VBox>
-                        <TextArea fx:id="TextAreaMy" prefHeight="370.0" prefWidth="447.0">
-                           <HBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </HBox.margin>
-                        </TextArea>
+                        <TableView fx:id="MyTable" prefHeight="370.0" prefWidth="451.0">
+                          <columns>
+                              <TableColumn fx:id="codResiMy" prefWidth="51.200010657310486" text="Codigo" />
+                              <TableColumn fx:id="nomResiMy" prefWidth="127.19995880126953" text="Nombre" />
+                            <TableColumn fx:id="nomUniMy" prefWidth="113.60003662109375" text="Universidad" />
+                            <TableColumn fx:id="precioMy" prefWidth="76.0" text="Precio" />
+                              <TableColumn fx:id="comedorMy" prefWidth="82.39996337890625" text="Comedor" />
+                          </columns>
+                        </TableView>
                      </children>
                   </HBox>
                </children></AnchorPane>
@@ -103,11 +108,15 @@
                               </ProgressBar>
                            </children>
                         </VBox>
-                        <TextArea fx:id="TextAreaSQL" prefHeight="370.0" prefWidth="447.0">
-                           <HBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </HBox.margin>
-                        </TextArea>
+                        <TableView fx:id="SQLTable" prefHeight="370.0" prefWidth="451.0">
+                           <columns>
+                              <TableColumn fx:id="codResiSQL" prefWidth="51.200010657310486" text="Codigo" />
+                              <TableColumn fx:id="nomResiSQL" prefWidth="127.19995880126953" text="Nombre" />
+                              <TableColumn fx:id="nomUniSQL" prefWidth="113.60003662109375" text="Universidad" />
+                              <TableColumn fx:id="precioSQL" prefWidth="80.79998779296875" text="Precio" />
+                              <TableColumn fx:id="comedorSQL" prefWidth="75.2000732421875" text="Comedor" />
+                           </columns>
+                        </TableView>
                      </children>
                   </HBox>
                </children></AnchorPane>
@@ -148,11 +157,15 @@
                               </ProgressBar>
                            </children>
                         </VBox>
-                        <TextArea fx:id="TextAreaAccess" prefHeight="370.0" prefWidth="447.0">
-                           <HBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </HBox.margin>
-                        </TextArea>
+                        <TableView fx:id="AccessTable" prefHeight="370.0" prefWidth="451.0">
+                           <columns>
+                              <TableColumn fx:id="codResiAccess" prefWidth="51.200010657310486" text="Codigo" />
+                              <TableColumn fx:id="nomResiAccess" prefWidth="127.19995880126953" text="Nombre" />
+                              <TableColumn fx:id="nomUniAccess" prefWidth="113.60003662109375" text="Universidad" />
+                              <TableColumn fx:id="precioAccess" prefWidth="80.79998779296875" text="Precio" />
+                              <TableColumn fx:id="comedorAcces" prefWidth="75.2000732421875" text="Comedor" />
+                           </columns>
+                        </TableView>
                      </children>
                   </HBox>
                </children>

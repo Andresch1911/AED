@@ -34,12 +34,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Documents/AED/Nueva carpeta/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Documents/AED/Nueva carpeta/Microsoft JDBC Driver 7.0 for SQL Server/sqljdbc_7.0/esn/mssql-jdbc-7.0.0.jre10.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/ProyectoAED/UCanAccess-4.0.4-bin/ucanaccess-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/ProyectoAED/UCanAccess-4.0.4-bin/lib/jackcess-2.1.11.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/ProyectoAED/UCanAccess-4.0.4-bin/lib/commons-lang-2.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/ProyectoAED/UCanAccess-4.0.4-bin/lib/commons-logging-1.1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Desktop/ProyectoAED/UCanAccess-4.0.4-bin/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/a_ch9/Desktop/Exportacion/ProyectoAED/Microsoft JDBC Driver 7.4 for SQL Server/sqljdbc_7.4/esn/mssql-jdbc-7.4.1.jre11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/a_ch9/Desktop/Exportacion/ProyectoAED/UCanAccess-4.0.4-bin/ucanaccess-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/a_ch9/Desktop/Exportacion/ProyectoAED/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/a_ch9/Desktop/Exportacion/ProyectoAED/UCanAccess-4.0.4-bin/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/a_ch9/Desktop/Exportacion/ProyectoAED/UCanAccess-4.0.4-bin/lib/jackcess-2.1.11.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
